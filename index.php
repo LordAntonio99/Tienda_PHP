@@ -11,6 +11,7 @@
 <body>
     <section>
         <?php 
+            session_start();
             include_once './php_scripts/banner_main.php';
             include './php_scripts/db_connect.php';
         ?>
@@ -22,36 +23,36 @@
     </section>
     <section class="grid wrapper">
         <div class="articulo-box box">
-                <img src="./images/iphone8.png">
-                <?php
+            <?php
+                    mostrarImagen(1);
                     mostrarNombre(1);
                     mostrarDescripcion(1);
-                ?>
-                <a href=".">Ver mas</a>
+            ?>
+                <a href=".">COMPRAR</a>
         </div>
         <div class="articulo-box box">
-                <img src="./images/iphonex.png">
                 <?php
+                    mostrarImagen(2);
                     mostrarNombre(2);
                     mostrarDescripcion(2);
                 ?>
-                <a href=".">Ver mas</a>
+                <a href=".">COMPRAR</a>
         </div>
         <div class="articulo-box box">
-                <img src="./images/iphone6plus.png">
                 <?php
+                    mostrarImagen(3);
                     mostrarNombre(3);
                     mostrarDescripcion(3);
                 ?>
-                <a href=".">Ver mas</a>
+                <a href=".">COMPRAR</a>
         </div>
         <div class="articulo-box box">
-                <img src="./images/iphone8.png">
                 <?php
+                    mostrarImagen(1);
                     mostrarNombre(1);
                     mostrarDescripcion(1);
                 ?>
-                <a href=".">Ver mas</a>
+                <a href=".">COMPRAR</a>
         </div>
     </section>
 </body>
