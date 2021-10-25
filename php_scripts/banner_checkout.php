@@ -6,7 +6,7 @@
     echo "</a>";
     echo "</div>";
     echo "<div class=\"icon\">";
-    echo "<a href=\".\" class=\"links\">";
+    echo "<a href=\"./checkout.php\" class=\"links\">";
     echo "<i class=\"material-icons\">shopping_cart</i>";
     echo "</a>";
     echo "</div>";
