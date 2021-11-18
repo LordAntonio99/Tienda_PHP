@@ -1,6 +1,6 @@
 <?php
     echo "<nav class='navbar navbar-dark bg-dark justify-content-between'>";
-    echo "    <a class='navbar-brand mx-3 text-light' href='/tienda/index.php'><h1>Administracion</h1></a>";
+    echo "    <a class='navbar-brand mx-3 text-light' href='/tienda/admin/index.php'><h1>Administracion</h1></a>";
     echo "    <form class='row mx-3'>";
     echo "          <div>";
     echo "            <button class='btn btn-warning btn-circle' type='button'>";
