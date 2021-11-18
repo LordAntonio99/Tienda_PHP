@@ -1,0 +1,34 @@
+<?php
+    echo "<nav class='navbar navbar-dark bg-dark justify-content-between'>";
+    echo "    <a class='navbar-brand mx-3 text-light' href='/tienda/index.php'><h1>Administracion</h1></a>";
+    echo "    <form class='row mx-3'>";
+    echo "          <div>";
+    echo "            <button class='btn btn-warning btn-circle' type='button'>";
+    echo "                <a href='/tienda/admin/index.php' class='text-decoration-none text-reset'>";
+    echo "                    <h5>Inicio</h5>";
+    echo "                </a>";
+    echo "            </button>";
+    echo "            <button class='btn btn-warning btn-circle' type='button'>";
+    echo "                <a href='/tienda/admin/pedidos.php' class='text-decoration-none text-reset'>";
+    echo "                    <h5>Pedidos</h5>";
+    echo "                </a>";
+    echo "            </button>";
+    echo "            <button class='btn btn-warning btn-circle' type='button'>";
+    echo "                <a href='/tienda/admin/productos.php' class='text-decoration-none text-reset'>";
+    echo "                    <h5>Productos</h5>";
+    echo "                </a>";
+    echo "            </button>";
+    echo "            <button class='btn btn-warning btn-circle' type='button'>";
+    echo "                <a href='/tienda/admin/addproducto.php' class='text-decoration-none text-reset'>";
+    echo "                    <h5>Añadir producto</h5>";
+    echo "                </a>";
+    echo "            </button>";
+    echo "            <button class='btn btn-danger btn-circle' type='button'>";
+    echo "                <a href='/tienda/session/cerrarsesion.php' class='text-decoration-none text-reset'>";
+    echo "                    <h5>Cerrar sesion</h5>";
+    echo "                </a>";
+    echo "            </button>";
+    echo "          </div>";
+    echo "    </form>";
+    echo "</nav>";
+?>

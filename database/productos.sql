@@ -20,7 +20,8 @@ values
 
 create table pedidos (
     idpedido        int         auto_increment primary key,
-    correocliente   varchar(30) not null
+    correocliente   varchar(30) not null,
+    fecha           datetime    not null
 );
 
 create table detallepedidos (

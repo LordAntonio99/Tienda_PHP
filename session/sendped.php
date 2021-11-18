@@ -6,7 +6,8 @@
     // Iniciar servicio mysql
     $mysqli = new mysqli('localhost', 'root', '', 'campeones');
     echo "<h1>".$correo."</h1>";
-    $sql = "insert into pedidos (correocliente) values ('".$correo."')";
+    $fecha = date('Y-m-d H:i:s');
+    $sql = "insert into pedidos (correocliente, fecha) values ('$correo', '$fecha')";
     $mysqli->query($sql);
     $sql = "select idpedido from pedidos where correocliente='$correo' order by idpedido DESC  limit 1";
     $result = $mysqli->query($sql);
