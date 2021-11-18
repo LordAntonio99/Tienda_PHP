@@ -5,55 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <title>Tienda IAW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Tienda Asir</title>
 </head>
-<body>
-    <section>
-        <?php 
-            session_start();
-            include_once './php_scripts/banner_main.php';
-            include './php_scripts/db_connect.php';
-        ?>
-    </section>
-    <section>
-        <div class="titulo-pag">
-            <h1>PRODUCTOS DISPONIBLES</h1>
-        </div>
-    </section>
-    <section class="grid wrapper">
-        <div class="articulo-box box">
+<body class="bg-dark">
+    <?php
+        include_once("./php/banner.php");
+    ?>
+    <div class="card-deck mx-4">
+        <div class="row equal d-flex justify-content-center">
             <?php
-                    mostrarImagen(1);
-                    mostrarNombre(1);
-                    mostrarDescripcion(1);
+                include_once("./php/cards.php");
             ?>
-                <a href=".">COMPRAR</a>
         </div>
-        <div class="articulo-box box">
-                <?php
-                    mostrarImagen(2);
-                    mostrarNombre(2);
-                    mostrarDescripcion(2);
-                ?>
-                <a href=".">COMPRAR</a>
-        </div>
-        <div class="articulo-box box">
-                <?php
-                    mostrarImagen(3);
-                    mostrarNombre(3);
-                    mostrarDescripcion(3);
-                ?>
-                <a href=".">COMPRAR</a>
-        </div>
-        <div class="articulo-box box">
-                <?php
-                    mostrarImagen(1);
-                    mostrarNombre(1);
-                    mostrarDescripcion(1);
-                ?>
-                <a href=".">COMPRAR</a>
-        </div>
-    </section>
+    </div>
+
+    
 </body>
 </html>
