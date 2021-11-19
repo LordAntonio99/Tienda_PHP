@@ -38,7 +38,7 @@
         echo "    </div>";
         echo "    <div class='mb-3 mt-3 custom-file' style='width: 400px;'>";
         echo "        <label class='custom-file-label text-light mb-3' for='imagen'>Selecciona una imagen.</label>";
-        echo "        <input type='file' class='custom-file-input' id='imagen' name='imagen' required>";
+        echo "        <input type='file' class='custom-file-input' id='imagen' name='imagen' accept='image/png, image/jpeg' required>";
         echo "    </div>";
         echo "    <button type='submit' class='btn btn-success' style='width: 400px;'>Crear producto</button>";
         echo "</form>";

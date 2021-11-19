@@ -9,7 +9,7 @@
     echo "                </a>";
     echo "            </button>";
     echo "            <button class='btn btn-warning btn-circle' type='button'>";
-    echo "                <a href='/tienda/admin/pedidos.php' class='text-decoration-none text-reset'>";
+    echo "                <a href='/tienda/admin/pedidos.php?order=id&sort=1' class='text-decoration-none text-reset'>";
     echo "                    <h5>Pedidos</h5>";
     echo "                </a>";
     echo "            </button>";

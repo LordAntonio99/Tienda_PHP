@@ -21,7 +21,7 @@
         } else if ($sort == 1){
             $sort = 0;
         }
-        if (!isset($_REQUEST['order'])){
+        if (!isset($_REQUEST['order']) || !isset($_REQUEST['sort'])){
             $sql = 'select * from detallepedidos inner join pedidos using (idpedido)';
         } 
         else if ($_REQUEST['order'] == 'id' && isset($_REQUEST['sort'])){

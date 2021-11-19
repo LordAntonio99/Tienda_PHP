@@ -4,7 +4,6 @@
     $imagen = $_REQUEST['imagen'];
     $nombre = $_REQUEST['nombre'];
     $precio = $_REQUEST['precio'];
-
     // Guardar en sesion
     $prodsession = [ 'imagen' => $imagen, 'nombre' => $nombre, 'precio' => $precio ];
     $_SESSION[$nombre] = $prodsession;

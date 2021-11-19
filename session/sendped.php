@@ -5,7 +5,6 @@
 
     // Iniciar servicio mysql
     $mysqli = new mysqli('localhost', 'root', '', 'campeones');
-    echo "<h1>".$correo."</h1>";
     $fecha = date('Y-m-d H:i:s');
     $sql = "insert into pedidos (correocliente, fecha) values ('$correo', '$fecha')";
     $mysqli->query($sql);
@@ -15,12 +14,14 @@
         $idcliente = $row['idpedido'];
     };
     $result->close();
+    $cantidad = $_REQUEST['cantidad'];
     foreach ($_SESSION as $result) {
-        $sql = "insert into detallepedidos (idpedido, nombre, precio, cantidad) values ($idcliente, '".$result['nombre']."', ".$result['precio'].", 1) ".PHP_EOL;
-        $mysqli->query($sql);
+        $sql = "insert into detallepedidos (idpedido, nombre, precio, cantidad) values ($idcliente, '".$result['nombre']."', ".$result['precio'].", $cantidad) ";
         echo $sql;
+        // $mysqli->query($sql);
+
     };
     // Cerrar servicio mysql
     $mysqli->close();
-    header('Location: ./destroycart.php');
+    // header('Location: ./destroycart.php');
 ?>

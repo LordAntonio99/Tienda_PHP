@@ -24,12 +24,13 @@
             $id = $row['id'];
             echo "<div class='col-auto mb-3 d-flex justify-content-center pb-3'>";
             echo "    <div class='card bg-light' style='width: 24rem;'>";
+            echo "            <img class='card-img-top mx-auto rounded' style='height: 16rem;' src=".$row["imagen"]." alt='Card image cap'>";
             echo "            <div class='card-body d-flex flex-column align-content-center'>";
             echo "            <h5 class='card-title'><strong>".$row['id']." - ".$row["nombre"]."</strong></h5>";
             echo "            <p class='card-text align-center'>".$row["descripcion"]."</p>";
             echo "            </div>";
             echo "            <div class='d-flex flex-row' style='width: 100%;'>";
-            echo "              <a href='modificarproducto.php?id=$id' class='btn btn-warning mx-auto' style='width: 50%;'>Modificar</a>";
+            echo "              <a href='modificarproducto.php?id=$id' class='btn btn-success mx-auto' style='width: 50%;'>Modificar</a>";
             echo "              <a href='borrar.php?id=$id' class='btn btn-danger mx-auto' style='width: 50%;'>Borrar</a>";
             echo "            </div>";
             echo "    </div>";
